@@ -9,8 +9,8 @@ var path=require('path');
 var server = http.createServer(function (request, response) {
     var pathname = url.parse(request.url).pathname;
     console.log("pathname:" + pathname);
-    console.log(path.join("/Users/zhenhuihu/tmp/threebox/examples", pathname));
-    var realPath = path.join("/Users/zhenhuihu/tmp/threebox/examples", pathname);    //这里设置自己的文件名称;
+    console.log(path.join("/Users/weitu/code/tmp/threebox/examples", pathname));
+    var realPath = path.join("/Users/weitu/code/tmp/threebox/examples", pathname);    //这里设置自己的文件名称;
 
     var ext = path.extname(realPath);
     ext = ext ? ext.slice(1) : 'unknown';
